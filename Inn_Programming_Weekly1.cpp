@@ -1,27 +1,39 @@
+//Task 1
+
 #include <iostream>
 #include <string>
+#include <conio.h>
 
 std::string name;
-std::char initial;
+char initial;
+long phonenumber;
+int dob; //date of birth
+int dob_day;
+int dob_month;
+int dob_year;
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+
+    std::cout << "Full name: ";
+	std::getline(std::cin, name);
+	std::cout << "Your full name is " << name << "." << std::endl << "Enter intitial of first name: ";
+	std::cin >> initial;
+	std::cout << "Initial selected was " << initial << "." << std::endl << "What is your age? ";
+	std::cin >> dob;
+	std::cout << "You are " << dob << " years old." << std::endl << "Phone number? ";
+	std::cin >> phonenumber;
+	std::cout << "You entered " << phonenumber << std::endl << "What year were you born? ";
+	std::cin >> dob_year;
+	std::cout << "You are born in lord's year of " << dob_year << std::endl << "Month of birth (1 - 12)? ";
+	std::cin >> dob_month;
+	std::cout << "You were born in " << dob_month << std::endl << "Day of birth (1 - 31)? ";
+	std::cin >> dob_day;
+	std::cout << "To sum up:" << std::endl << "Name: " << name << std::endl << "Initial: " << initial << std::endl <<
+		"Phone number: " << phonenumber << std::endl <<
+		"Your date of birth is " << dob_day << "/" << dob_month << "/" << dob_year << "." << std::endl << "Press any key to finish";
+	_getch();
+
 }
 
-
-
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
-/*std::cout << "Enter your full name : ";
-	std::getline(std::cin, FullName); //further reading at learncpp.com 1.5
-	std::cout << "Your full name is : " << FullName;*/
